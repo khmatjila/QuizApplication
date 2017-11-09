@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.example.codetribe.quizapplication.RandomActivity">
+
+    <LinearLayout
+        android:id="@+id/linearQuesioNAnswers"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="0"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/displayquestion"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_margin="16dp"
+            android:layout_weight="1"
+            android:background="@android:color/white"
+            android:backgroundTint="@android:color/white"
+            android:paddingTop="110dp"
+            android:text="Questions Here................"
+            android:textAlignment="center"
+            android:textAppearance="@android:style/TextAppearance.Medium"
+            android:textColor="@color/colorBlack"
+            android:textColorHighlight="@color/colorBlack"
+            android:textIsSelectable="false"
+            android:textSize="18sp"
+            android:textStyle="bold|normal" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginRight="16dp"
+            android:layout_marginLeft="16dp"
+            android:background="@android:color/white"></View>
+
+        <RadioGroup
+            android:id="@+id/raddGroup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginBottom="40dp"
+            android:layout_marginLeft="16dp"
+            android:paddingRight="16dp"
+            android:layout_marginTop="24dp"
+            android:layout_weight="0"
+            android:weightSum="1">
+
+            <RadioButton
+                android:id="@+id/possibleAnswer1RadB"
+                style="@style/RadButtonStyle"
+                android:buttonTint="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/possibleAnswer2RadB"
+                style="@style/RadButtonStyle"
+                android:buttonTint="@android:color/white" />
+
+            <RadioButton
+                android:id="@+id/possibleAnswer3RadB"
+                style="@style/RadButtonStyle"
+                android:buttonTint="@android:color/white"/>
+
+            <RadioButton
+                android:id="@+id/possibleAnswer4RadB"
+                style="@style/RadButtonStyle"
+                android:buttonTint="@android:color/white" />
+        </RadioGroup>
+
+    </LinearLayout>
+</LinearLayout>

@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.codetribe.quizapplication.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:background="@mipmap/chemquiz"
+        android:scaleType="centerCrop"
+        android:weightSum="1">
+
+    </RelativeLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:paddingTop="46dp"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <br.com.bloder.magic.view.MagicButton
+            android:id="@+id/btnPolitics"
+            style="@style/MagButtonStyle"
+            app:button_icon="@drawable/politic"
+            app:button_icon_height="25dp"
+            app:button_icon_width="25dp"
+            app:expandable_area_color="#3197E6"
+            app:hide_text="Politics"
+            app:icon_button_color="#1D78BE"
+            app:magic_button_size="50dp" />
+
+        <br.com.bloder.magic.view.MagicButton
+            android:id="@+id/btnMovies"
+            style="@style/MagButtonStyle"
+            app:button_icon="@drawable/play"
+            app:button_icon_height="25dp"
+            app:button_icon_width="25dp"
+            app:expandable_area_color="#484445"
+            app:hide_text="Movies"
+            app:icon_button_color="#212121"
+            app:magic_button_size="50dp" />
+
+        <br.com.bloder.magic.view.MagicButton
+            android:id="@+id/btnTechnology"
+            style="@style/MagButtonStyle"
+            app:button_icon="@drawable/tech"
+            app:button_icon_height="25dp"
+            app:button_icon_width="25dp"
+            app:expandable_area_color="#7E57C2"
+            app:hide_text="Science/Tech"
+            app:icon_button_color="#4A148C"
+            app:magic_button_size="50dp" />
+
+
+    </LinearLayout>
+
+</LinearLayout>

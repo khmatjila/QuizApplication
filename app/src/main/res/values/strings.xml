@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Quiz Application</string>
+    <string name="title_activity_random">RandomActivity</string>
+    <string name="score_board">Score Board</string>
+</resources>
